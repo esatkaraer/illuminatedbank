@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="618.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.gui.view.ViewController">
+   <children>
+      <ImageView fitHeight="618.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../resources/WelcomeScreen.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="failReadLabel" layoutX="283.0" layoutY="475.0" text="Uw pas kon niet worden gelezen. Probeer het opnieuw." textFill="RED" visible="false" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+       </children>
+</AnchorPane>

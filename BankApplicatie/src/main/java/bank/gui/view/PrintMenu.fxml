@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="618.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.gui.view.ViewController">
+   <children>
+      <ImageView fitHeight="618.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../resources/Background.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="printMenuConfirmButton" layoutX="873.0" layoutY="113.0" mnemonicParsing="false" onAction="#handlePrintMenuA" text="Ja           A" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="printMenuAbortButton" layoutX="851.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleAbort" text="Nee        D" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="400.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="printMenuLabel" alignment="CENTER" layoutX="498.0" layoutY="220.0" text="text" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
