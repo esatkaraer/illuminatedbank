@@ -21,7 +21,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="withdrawD" layoutX="851.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleAbort" text="Afbreken                     D" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="400.0">
+      <Button fx:id="withdrawD" layoutX="851.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleAbort" text="Afbreken                     *" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="400.0">
          <font>
             <Font size="24.0" />
          </font>
@@ -41,7 +41,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="861.0" layoutY="194.0" mnemonicParsing="false" text="Correctie     *" AnchorPane.rightAnchor="700.0" AnchorPane.topAnchor="500.0">
+      <Button layoutX="861.0" layoutY="194.0" mnemonicParsing="false" text="Correctie     D" AnchorPane.rightAnchor="700.0" AnchorPane.topAnchor="500.0">
          <font>
             <Font size="24.0" />
          </font>
@@ -51,6 +51,9 @@
             <Font size="24.0" />
          </font>
       </TextField>
-      <Label fx:id="maxWithdrawLabel" layoutX="416.0" layoutY="217.0" text="Label" />
+      <Label fx:id="maxWithdrawLabel" layoutX="298.0" layoutY="251.0" text="Zelf een bedrag in voeren">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
    </children>
 </AnchorPane>

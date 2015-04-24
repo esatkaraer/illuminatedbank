@@ -1,6 +1,11 @@
 package bank.gui.view;
 
+import LabelWriter;
+
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -258,8 +263,37 @@ public class ViewController{
     }
     @FXML
     private void handlePrintMenuA(){
-    	System.out.println("hoi");
+    	DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		//get current date time with Date()
+		Date date = new Date();
+        Preferences prefs = Preferences.userNodeForPackage(MainApp.class);
+        prefs.put("transactienr", "0001");
+        String accnr = prefs.get("rekeningnr", "0000000000");
+        String shortenedaccnr = accnr.substring(accnr.length() - 3);
+		
+		String[] text = new String[14];
+		  text[0] = "Geldopnamebon";
+		  text[1] = "ILLUMINATED Group";
+		  
+		  text[2] = "Automaatnr: ILMG-0001";
+		  text[3] = "Transactienr: "+prefs.get("transactienr", "0000");
+		  text[4] = "";
+		  
+		  text[5] = ("Rekeningnr: xxxxxxx"+shortenedaccnr);
+		  text[6] = "Pasnr: 101";
+		  text[7] = "";
 
+		  text[8] = "Datum: "+dateFormat.format(date);
+		  text[9] = "";
+
+		  text[10] = "Withdraw Amount: ";
+		  text[11] = "";
+		  text[12] = "";
+
+		  text[13] = "";//"Illuminated Group";
+		   
+		  LabelWriter labelwriter = new LabelWriter(); 
+		  labelwriter.printLabel(text);
     }
 
 

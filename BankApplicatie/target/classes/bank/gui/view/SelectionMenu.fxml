@@ -26,7 +26,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="selectionMenuAbort" layoutX="851.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleAbort" text="Afbreken            D" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="400.0">
+      <Button fx:id="selectionMenuAbort" layoutX="851.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleAbort" text="Afbreken            *" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="400.0">
          <font>
             <Font size="24.0" />
          </font>
